@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser</title>
+</head>
+<body>
+<select name="browser" id="brs">
+    <option value="edge">Edge</option>
+    <option value="chrome">Chrome</option>
+    <option value="firefox">Firefox</option>
+    <option value="safari">Safari</option>
+    <option value="opera">Opera</option>
+    <option value="other">Other</option>
+</select>
+<button onclick="check()">Check</button>
+<script>
+    function check(){
+    let browser = document.getElementById('brs').value;
+    switch (browser){
+        case 'edge':
+            alert("You've got the Edge!");
+            break;
+        case 'chrome':
+        case 'firefox':
+        case 'opera':
+        case 'safari':
+            alert("Okay we support these browsers too");
+            break;
+        default:
+            alert("We hope that this page looks ok!");
+    }}
+</script>
+</body>
+</html>
